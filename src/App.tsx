@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import './App.css';
-import UncontrolledAccordion from "./components/Accordion/UncontrolledAccordion";
-import {UncontrolledRating} from "./components/Rating/UncontrolledRating";
-import {UncontrolledOnOff} from "./components/OnOff/./UncontrolledOnOff";
+import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import Accordion from "./components/Accordion/Accordion";
 import {OnOfff} from "./components/OnOff/OnOfff";
+import {Input} from "./components/Input/Input";
 
 function App() {
 
@@ -32,8 +33,9 @@ function App() {
             <UncontrolledAccordion titleValue={"Menu"}/>
 
             <Accordion titleValue={"Users"} collapsed={collapsed} onChange={()=>setCollapsed(!collapsed)}/>
-            <UncontrolledRating/>
+            <UncontrolledRating onChange={()=>{}}/>
 
+            {/*<Input value={"It-incubator.com"}/>*/}
         </div>
     );
 }
